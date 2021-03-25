@@ -3,9 +3,15 @@ Uso de R para análise de datasets
 
 ### Script em R
 
-movies = read.csv("path/movies.csv")    <!-- O caminho onde se encontra o arquivo --!>
+Importação do dataset:
+```r 
+movies = read.csv("path/movies.csv")
+``` 
 
-aggregate(movies$imdb_score, list(movies$country), FUN = "max") <!-- Utiliza a função nativa aggregate, para coletar o maior score de um filme por país atráves da função "MAX" --!>
+Utiliza a função nativa aggregate, para coletar o maior score de um filme por país atráves da função "MAX"
+```r
+aggregate(movies$imdb_score, list(movies$country), FUN = "max") 
+````
 
 
 

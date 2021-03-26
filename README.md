@@ -5,6 +5,8 @@ Uso de R para análise de datasets
 Extrai os filmes com maiores "scores" por país, presentes no dataset do IMDB
 
 ```r 
+library(data.table)
+
 movies = read.csv("path/movies.csv")  #Importação do dataset passando o caminho do arquivo
 
 data <- movies[,c("country","movie_title", "imdb_score")]   #Seleciona as colunas que serão analisadas

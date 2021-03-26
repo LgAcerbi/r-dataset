@@ -5,15 +5,15 @@ O código abaixo extrai os filmes com maiores "scores" de cada país, presentes 
 Extrai os filmes com maiores "scores" por país, presentes no dataset do IMDB
 
 ```r 
-library(data.table)
+library(data.table)                                         #Importação da biblioteca "data.table" para utilizar no script
 
-movies = read.csv("path/movies.csv")  #Importação do dataset passando o caminho do arquivo
+movies = read.csv("path/movies.csv")                        #Importação do dataset passando o caminho do arquivo
 
 data <- movies[,c("country","movie_title", "imdb_score")]   #Seleciona as colunas que serão analisadas
 
-myDataFrame <- setDT(data)  	#Converte para data.table 
+myDataFrame <- setDT(data)  	                              #Converte para data.table 
 
-setDT(data)[, .SD[which.max(imdb_score)], by=country]    #setDT(data)[, .SD[which.max(imdb_score)], by=country]
+setDT(data)[, .SD[which.max(imdb_score)], by=country]       #setDT(data)[, .SD[which.max(imdb_score)], by=country]
 ```
 
 ### Resultado:

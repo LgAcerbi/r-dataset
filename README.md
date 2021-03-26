@@ -16,5 +16,5 @@ setDT(data)[, .SD[which.max(imdb_score)], by=country]    #setDT(data)[, .SD[whic
 
 Resultado:
 
-### ![Print do resultado] (https://github.com/LgAcerbi/r-dataset/blob/main/sc_1.png)
+### ![Print do resultado] (https://github.com/LgAcerbi/r-dataset/blob/main/sc_1.png?raw=true)
 

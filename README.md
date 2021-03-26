@@ -2,7 +2,6 @@
 O código abaixo extrai os filmes com maiores "scores" de cada país, presentes no dataset do IMDB.
 
 ### Código
-Extrai os filmes com maiores "scores" por país, presentes no dataset do IMDB
 
 ```r 
 > library(data.table)                                         #Importação da biblioteca "data.table" para utilizar no script

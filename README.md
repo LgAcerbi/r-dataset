@@ -13,10 +13,10 @@ Extrai os filmes com maiores "scores" por país, presentes no dataset do IMDB
 
 > myDataFrame <- setDT(data)  	                              #Converte para data.table 
 
-> setDT(data)[, .SD[which.max(imdb_score)], by=country]       #setDT(data)[, .SD[which.max(imdb_score)], by=country]
+> setDT(data)[, .SD[which.max(imdb_score)], by=country]       #Lista por país, os filmes com os maiores scores no dataset
 ```
 
-### Resultado:
+### Resultado
 
 ![Print do resultado](https://github.com/LgAcerbi/r-dataset/blob/main/sc_1.png?raw=true)
 

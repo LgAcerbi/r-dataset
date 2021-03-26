@@ -1,5 +1,4 @@
 ### Objetivo
-Exemplo do uso de R
 O código abaixo extrai os filmes com maiores "scores" de cada país, presentes no dataset do IMDB.
 
 ### Código
